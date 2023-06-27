@@ -26,11 +26,13 @@ router.get('/', async (req, res) => {
         
         const postData = dbPostData.map((post) => post.get({plain: true}));
 
-        res.render('homepage', {
+        res.render('homepage', 
+        {
             postData,
             loggedIn: req.session.loggedIn,
             username: req.session.username,
-        });
+        }
+        );
     } catch (err) {
         res.status(500).json(err);
     }
