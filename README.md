@@ -24,6 +24,10 @@ Note:
 
 - This project is hosted on Heroku and utilizes JawsDB. The .env is not uploaded to GitHub for security reasons, but to fully replicate this website on a cloud-based platform, you will need to generate a connection string in order to seed the data through a database on such a platform as Heroku.
 
+## Links
+
+This is the link to the webpage: https://tech-blog-db-8b33cc341f51.herokuapp.com/
+
 
 ## License 📜
 
