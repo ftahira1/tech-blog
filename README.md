@@ -1,36 +1,78 @@
-# Tech-Blog 🚀
+# CarFix Blog
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Description 📝 
+## Description
 
-Tech Blog provides a content management system (CMS) to run a blog site. Users can log in to publish a post on the site and leave comments on posts. Logged in users have the ability to edit or delete previous posts from their dashboard. Non-logged in users can freely view published posts, but need to sign up to publish posts or leave comments.
+### Summary:
 
-Tech Blog is a full stack web application built following the Model View Controller (MVC) design paradigm. It uses MySQL and Sequelize for model definition and interaction, handlebars.js as the HTML view templating engine, and express.js for the server. The site uses cookies and session data to restrict access to publishing posts and comments to logged in users.
+Do you have an interest in cars? Having issues with your current vehicle? This is the site for you! Join others in posting about you personal car issues ranging from any warning light to something just not sounding right.
 
-The web application is hosted on Heroku. Link to deployed website: https://tech-blog-db-6c317f549c9b.herokuapp.com/
+## User Story
 
-## Installation 🗳 
+GIVEN I am on the website.
+WHEN I click List of posts or make a new post.
+THEN the website will tell me to login or sign up first.
 
-The web application is free to use at: https://tech-blog-db-6c317f549c9b.herokuapp.com/
+WHEN I login or sign up after typing the username and password.
+THEN I am presented with a list of previous posts or the opportunity to create a new one.
 
-If you would like to install this project on your local computer:
-- Download or clone repository to use this application on local machine.
-- Node.js is required to run the application
-- To install necessary dependencies, run the following command :
->    `npm i`
+WHEN I click the create a new post button.
+THEN I am presented with a page where I can create a new post by inputting the type of car I have and what issues I'm facing. 
 
-Note:
+WHEN I click the “create” button.
+THEN It will save to the list of posts.
 
-- If you would like to build your own website, make sure you have a database you can run the seeds into. Seeds are sample rows for each model (table), to give you some starter data. Reading the package.json and make sure you read the script and seeds code, as well as run an npm install.
+WHEN I click one of the posts in the list.
+THEN I am presented with the page for me to update or delete that post.
 
-- This project is hosted on Heroku and utilizes JawsDB. The .env is not uploaded to GitHub for security reasons, but to fully replicate this website on a cloud-based platform, you will need to generate a connection string in order to seed the data through a database on such a platform as Heroku.
+WHEN I click the “Sign out” button.
+THEN I am presented with the Home page.
+
+## Table of Contents
+[Concept](#concept)
+
+[Installation](#installation)
+
+[Usage](#usage)
+
+[License](#license)
+
+[Link to our Repository](#link-to-our-repository)
 
 
-## License 📜
 
-MIT license Copyright (c) 2023 ftahira1
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+## Concept
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+🎯 Fun User Interactive website.
+
+🎯 We LIKE cars and solving issues!
+
+As a car enthusiast or car owner I WANT to share issues I'm having with my vehicle and what type of car I own.
+
+It’s DONE when I create an account and upload my issues about my vehicle to the website.
+
+## Installation
+
+This application requires the user to have Node.js and MySQL.
+Once you open this app, type into the intergrated terminal, `npm i`, to download all the required packages from the package.json.
+Then, type again into the intergrated terminal `npm run seed`, and finally either `npm start server`, `node server`, or `npx nodemon` to start the server and enter our site.
+
+## Usage
+
+Our website is very simple and easy to use, you only need to create an account to use it!
+
+- After landing on our page, you can choose to Login/Signup on the top left of the page, or type into the searchbar to find a random giffy of your favorite car. 
+- Once logged in or signed up, you can create a post that displays what car you have and the issues that you're having. 
+- You can edit or delete posts from the user dash, or once again search for a giffy of your favorite vehicle!
+
+## License  
+
+  This project utilized the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT). 
+
+  For more information see link: (https://opensource.org/licenses/MIT)
+
+  ## Link to our Repository
+
+[Repository Link!](https://github.com/YC937/TravelBlog) 

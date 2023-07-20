@@ -1,0 +1,23 @@
+<section>
+<h2 class="container w-25 p-3 bg-primary text-center text-white col-4">Your Posts</h2>
+
+<div class="text-center col-12 m-1">
+ <button type="submit" class="btn new-post-button bg-primary" ><a class="link text-white " href="/userdash/new">+ New Post</a></button>
+</div>
+<div class="text-center">
+{{#if posts.length}}
+
+  
+    {{#each posts as |post|}}
+      {{> post-info post}}
+        <a href="/userdash/edit/{{post.id}}"><button class="button mb-5 ml-5 is-warning bg-primary text-white">edit post</button></a>
+    {{/each}}
+
+
+{{/if}}
+</div>
+</section>
+  {{#if loggedIn}}
+<script src="/js/logout.js"></script>
+{{/if}}
+<script src="/js/add-post.js"></script> 

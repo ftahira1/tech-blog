@@ -1,20 +1,16 @@
-<div class="column">
-<h2 class="title pb-4">login:</h2><hr>
-<form class="login-form">
-  <div>
-    <label for="username-login">Username:</label>
-    <input type="text" id="username-login" />
-  </div>
-  <div>
-    <label for="password-login">Password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit" class="button is-primary">Login</button>
-    <a href="/signup"><button type="button" class="button is-danger">Signup</button></a>
-  </div>
-</form>
-</div>
 
-<!-- javascript file-->
-<script src="/javascript/login.js"></script>
+<h2 class="title pb-4">Log In</h2>
+  <form id="login-form" class="card-body">
+    <div class="form-row">
+      <label class="form-label" for="email-login">Email</label>
+      <input  id="email-login" type="text" autofocus="true" class="form-input form-control"/>
+    </div>
+    <div class="form-row mb-3">
+      <label class="form-label" for="password-login">Password</label>
+      <input id="password-login" type="password" autofocus="true" class="form-input form-control"/>
+    </div>
+      <button type="submit" class="btn">LogIn</button>
+      <a class="btn login-link" href="/signup">SignUp</a>
+  </form>
+    
+<script src="/js/login.js"></script>

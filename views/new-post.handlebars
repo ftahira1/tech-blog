@@ -1,0 +1,22 @@
+
+<section>
+        <a href="/userdash" class="is-pulled-right"> Back to dashboard</a>
+<h2 class="card-header">Create New Post</h2>
+<form class="card-body new-post-form" id="new-post-form">
+    <div class="form-row">
+        <label for="model" class="form-label">Model</label>
+        <input type="text" id="model" name="post-title" class="form-input form-control" />
+    </div>
+    <div class="form-row">
+        <label class="form-label" for="issue">Issue</label>
+        <input id="issue" name="issue" class="form-input form-control" />
+    </div>
+    <button type="submit" class="btn">Create</button>
+</form>
+
+</section>
+
+  {{#if loggedIn}}
+<script src="/js/logout.js"></script>
+{{/if}}
+<script src="/js/add-post.js"></script>

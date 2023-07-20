@@ -1,0 +1,21 @@
+<h2 class="card-header">Edit Post</h2>
+    <form class="card-body" id='edit-post-form'>
+        <div class="form-row">
+        <label for="model" class="form-label">Model</label>
+        <input name="model" type="text" value="{{post.model}}" class="form-input form-control"/>
+        </div>
+
+        <div class="form-row">
+        <label class="form-label" for="issue">Issue</label>
+        <input name="issue" type="text" value="{{post.issue}}" class="form-input form-control"/>
+        </div>
+        <button type="submit" class="btn">Update Post</button>
+        <button type="button" class="delete-post-btn btn">Delete Post</button>
+    </form>
+
+  <script src="/js/edit-post.js"></script>
+<script src="/js/delete-post.js"></script>
+  {{#if loggedIn}}
+<script src="/js/logout.js"></script>
+{{/if}}
+    
